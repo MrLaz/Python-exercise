@@ -15,8 +15,7 @@ nev1 = input("Player1! Ird be a neved! : ")
 nev2 = input("Player2! Ird be a neved! : ")
 
 
-def printeles(): 
-    print()      
+def printeles():       
     for i in range(0, 11):
         print(i, end = " ")
     print()
@@ -24,10 +23,6 @@ def printeles():
         for elem in sor:
             print(elem, end = " ")
         print()
-def vizsgalat_p1():
-    pass
-
-                                    
                                   
 def player1():
     
@@ -47,7 +42,6 @@ def player1():
                 if elem == sorbeker:
                     if sor[oszlopbeker] == "-":
                         sor[oszlopbeker] = "X"
-                        vizsgalat_p1()
                         printeles()
                         player2() 
                     elif sor[oszlopbeker] == "O":
