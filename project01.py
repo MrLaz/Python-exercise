@@ -112,11 +112,13 @@ def player_tipp(nev,jel):
         try:
             sorbeker = str(input(f"{nev} '{jel}' Melyik sor? (a-j): "))
             oszlopbeker = int(input(f"{nev} '{jel}' Melyik oszlop? (1-10): "))
+            
             print()
         except:
             print()
             print("Hiba! Ujra! (enter)")
             input()
+            continue
         
         for sor in jatekter:
             for elem in sor:
